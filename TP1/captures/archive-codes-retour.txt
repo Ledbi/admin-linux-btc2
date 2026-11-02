@@ -1,0 +1,8 @@
+nov. 02 14:22:06 srv-core helios-archive[1115]: demarrage
+nov. 02 14:22:07 srv-core helios-archive[1125]: archive /var/lib/helios/archives/telemetry-20261102-142206.csv.gz (161 lignes)
+nov. 02 14:22:07 srv-core helios-archive[1129]: purge : 0 archive(s) supprimee(s)
+nov. 02 14:22:07 srv-core helios-archive[1131]: fin d execution rc=0
+nov. 02 14:22:20 srv-core helios-archive[1154]: une autre instance tourne deja
+nov. 02 14:22:20 srv-core helios-archive[1155]: fin d execution rc=2
+nov. 02 14:23:09 srv-core helios-archive[1204]: source illisible : /var/lib/helios/telemetry.csv
+nov. 02 14:23:09 srv-core helios-archive[1205]: fin d execution rc=3

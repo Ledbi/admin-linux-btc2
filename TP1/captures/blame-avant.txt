@@ -1,0 +1,15 @@
+1min 58ms NetworkManager-wait-online.service
+  15.841s sys-devices-platform-serial8250-tty-ttyS2.device
+  15.841s dev-ttyS2.device
+  15.839s sys-module-configfs.device
+  15.835s dev-ttyS1.device
+  15.835s sys-devices-platform-serial8250-tty-ttyS1.device
+  15.823s dev-ttyS3.device
+  15.823s sys-devices-platform-serial8250-tty-ttyS3.device
+  15.813s dev-ttyS0.device
+  15.813s sys-devices-platform-serial8250-tty-ttyS0.device
+  11.900s dracut-initqueue.service
+   5.349s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1\x2dpart2.device
+   5.349s dev-disk-by\x2dpartuuid-5cbfc19f\x2d02.device
+   5.349s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VB29fba766\x2d657ae29d\x2dpart2.device
+   5.349s dev-sda2.device

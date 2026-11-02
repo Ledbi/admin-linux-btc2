@@ -1,0 +1,12 @@
+dropped privs to tcpdump
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on bond0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+14:17:58.880823 08:00:27:1d:dc:9b > Broadcast, ethertype 802.1Q (0x8100), length 46: vlan 42, p 0, ethertype ARP (0x0806), Request who-has 10.42.42.11 tell 10.42.42.10, length 28
+14:17:58.881955 08:00:27:32:ba:6a > 08:00:27:1d:dc:9b, ethertype 802.1Q (0x8100), length 64: vlan 42, p 0, ethertype ARP (0x0806), Reply 10.42.42.11 is-at 08:00:27:32:ba:6a, length 46
+14:17:58.881966 08:00:27:1d:dc:9b > 08:00:27:32:ba:6a, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.10 > 10.42.42.11: ICMP echo request, id 4, seq 1, length 64
+14:17:58.882590 08:00:27:32:ba:6a > 08:00:27:1d:dc:9b, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.11 > 10.42.42.10: ICMP echo reply, id 4, seq 1, length 64
+14:17:59.882236 08:00:27:1d:dc:9b > 08:00:27:32:ba:6a, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.10 > 10.42.42.11: ICMP echo request, id 4, seq 2, length 64
+14:17:59.883367 08:00:27:32:ba:6a > 08:00:27:1d:dc:9b, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.11 > 10.42.42.10: ICMP echo reply, id 4, seq 2, length 64
+6 packets captured
+6 packets received by filter
+0 packets dropped by kernel

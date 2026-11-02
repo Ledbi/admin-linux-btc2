@@ -1,0 +1,5 @@
+● helios-collect.service - Collecteur de telemetrie Helios
+     Loaded: loaded (/etc/systemd/system/helios-collect.service; enabled; preset: disabled)
+     Active: active (running) since Mon 2026-11-02 14:08:19 CET; 2s ago
+       Docs: https://wiki.helios.lan/collect
+   Main PID: 1196 (helios-collect.)

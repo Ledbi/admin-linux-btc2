@@ -1,0 +1,15 @@
+16.344s sys-module-configfs.device
+16.288s sys-devices-platform-serial8250-tty-ttyS1.device
+16.288s dev-ttyS1.device
+16.274s dev-ttyS3.device
+16.274s sys-devices-platform-serial8250-tty-ttyS3.device
+16.273s dev-ttyS0.device
+16.273s sys-devices-platform-serial8250-tty-ttyS0.device
+16.273s dev-ttyS2.device
+16.273s sys-devices-platform-serial8250-tty-ttyS2.device
+12.534s dracut-initqueue.service
+ 5.184s dev-disk-by\x2dpartuuid-5cbfc19f\x2d02.device
+ 5.184s sys-devices-pci0000:00-0000:00:0d.0-ata1-host0-target0:0:0-0:0:0:0-block-sda-sda2.device
+ 5.184s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VB29fba766\x2d657ae29d\x2dpart2.device
+ 5.184s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart2.device
+ 5.184s dev-sda2.device
