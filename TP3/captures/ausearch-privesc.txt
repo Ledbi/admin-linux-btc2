@@ -1,0 +1,20 @@
+type=PROCTITLE msg=audit(04/11/2026 13:01:01.227:176) : proctitle=tail -20 
+type=PATH msg=audit(04/11/2026 13:01:01.227:176) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50597798 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 13:01:01.227:176) : item=0 name=/bin/tail inode=34327770 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 13:01:01.227:176) : cwd=/root/TP3 
+type=EXECVE msg=audit(04/11/2026 13:01:01.227:176) : argc=2 a0=tail a1=-20 
+type=SYSCALL msg=audit(04/11/2026 13:01:01.227:176) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x562d12ec4f70 a1=0x562d12ec4ae0 a2=0x562d12e796e0 a3=0x8 items=2 ppid=1131 pid=1617 auid=ledbi uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=1 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(04/11/2026 13:01:01.227:177) : proctitle=tee /root/TP3/captures/ausearch-privesc.txt 
+type=PATH msg=audit(04/11/2026 13:01:01.227:177) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50597798 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 13:01:01.227:177) : item=0 name=/bin/tee inode=34327771 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 13:01:01.227:177) : cwd=/root/TP3 
+type=EXECVE msg=audit(04/11/2026 13:01:01.227:177) : argc=2 a0=tee a1=/root/TP3/captures/ausearch-privesc.txt 
+type=SYSCALL msg=audit(04/11/2026 13:01:01.227:177) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x562d12ec4f10 a1=0x562d12ec4ae0 a2=0x562d12e796e0 a3=0x8 items=2 ppid=1131 pid=1618 auid=ledbi uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=1 comm=tee exe=/usr/bin/tee subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(04/11/2026 13:01:01.230:178) : proctitle=ausearch -k privesc -i --start today 
+type=PATH msg=audit(04/11/2026 13:01:01.230:178) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50597798 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 13:01:01.230:178) : item=0 name=/sbin/ausearch inode=50965764 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 13:01:01.230:178) : cwd=/root/TP3 
+type=EXECVE msg=audit(04/11/2026 13:01:01.230:178) : argc=6 a0=ausearch a1=-k a2=privesc a3=-i a4=--start a5=today 
+type=SYSCALL msg=audit(04/11/2026 13:01:01.230:178) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x562d12ec4f80 a1=0x562d12ebbf50 a2=0x562d12e796e0 a3=0x8 items=2 ppid=1131 pid=1616 auid=ledbi uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=1 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 

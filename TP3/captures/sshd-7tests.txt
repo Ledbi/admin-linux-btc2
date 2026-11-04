@@ -1,0 +1,40 @@
+2026-11-04T12:49:47+0100 srv-core sshd-session[4126]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+2026-11-04T12:49:47+0100 srv-core sshd-session[4126]: Accepted publickey for ledbi from 192.168.56.11 port 53404 ssh2: ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY
+2026-11-04T12:49:47+0100 srv-core sshd-session[4126]: pam_unix(sshd:session): session opened for user ledbi(uid=1000) by ledbi(uid=0)
+2026-11-04T12:49:47+0100 srv-core sshd-session[4126]: User child is on pid 4129
+2026-11-04T12:49:47+0100 srv-core sshd-session[4126]: pam_unix(sshd:session): session closed for user ledbi
+2026-11-04T12:50:37+0100 srv-core sshd-session[4198]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-04T12:50:37+0100 srv-core sshd-session[4198]: Connection from 192.168.56.11 port 56026 on 192.168.56.10 port 2242 rdomain ""
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: Postponed publickey for ledbi from 192.168.56.11 port 56026 ssh2 [preauth]
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: Accepted publickey for ledbi from 192.168.56.11 port 56026 ssh2: ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: pam_unix(sshd:session): session opened for user ledbi(uid=1000) by ledbi(uid=0)
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: User child is on pid 4201
+2026-11-04T12:50:38+0100 srv-core sshd-session[4198]: pam_unix(sshd:session): session closed for user ledbi
+2026-11-04T12:50:43+0100 srv-core sshd-session[4233]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-04T12:50:43+0100 srv-core sshd-session[4233]: Connection from 192.168.56.11 port 56034 on 192.168.56.10 port 2242 rdomain ""
+2026-11-04T12:50:43+0100 srv-core sshd-session[4233]: User root from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+2026-11-04T12:50:43+0100 srv-core sshd-session[4233]: Connection closed by invalid user root 192.168.56.11 port 56034 [preauth]
+2026-11-04T12:50:43+0100 srv-core sshd[3272]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+2026-11-04T12:50:50+0100 srv-core sshd-session[4239]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-04T12:50:50+0100 srv-core sshd-session[4239]: Connection from 192.168.56.11 port 34322 on 192.168.56.10 port 2242 rdomain ""
+2026-11-04T12:50:50+0100 srv-core sshd-session[4239]: Connection closed by authenticating user ledbi 192.168.56.11 port 34322 [preauth]
+2026-11-04T12:50:50+0100 srv-core sshd[3272]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+2026-11-04T12:50:54+0100 srv-core sshd-session[4245]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-04T12:50:54+0100 srv-core sshd-session[4245]: Connection from 192.168.56.11 port 49524 on 192.168.56.10 port 2242 rdomain ""
+2026-11-04T12:50:54+0100 srv-core sshd-session[4245]: User nadia from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+2026-11-04T12:50:54+0100 srv-core sshd-session[4245]: Connection closed by invalid user nadia 192.168.56.11 port 49524 [preauth]
+2026-11-04T12:50:54+0100 srv-core sshd[3272]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: Connection from 192.168.56.11 port 57218 on 192.168.56.10 port 2242 rdomain ""
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: Postponed publickey for ledbi from 192.168.56.11 port 57218 ssh2 [preauth]
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: Accepted publickey for ledbi from 192.168.56.11 port 57218 ssh2: ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: pam_unix(sshd:session): session opened for user ledbi(uid=1000) by ledbi(uid=0)
+2026-11-04T12:51:16+0100 srv-core sshd-session[4263]: User child is on pid 4266
+2026-11-04T12:52:01+0100 srv-core sshd-session[4303]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-04T12:52:01+0100 srv-core sshd-session[4303]: Connection from 192.168.56.11 port 49924 on 192.168.56.10 port 2242 rdomain ""
+2026-11-04T12:52:01+0100 srv-core sshd-session[4303]: Unable to negotiate with 192.168.56.11 port 49924: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,ext-info-c,kex-strict-c-v00@openssh.com [preauth]
+2026-11-04T12:52:01+0100 srv-core sshd[3272]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication

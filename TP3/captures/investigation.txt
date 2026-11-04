@@ -1,0 +1,85 @@
+### 1. Avertissements sshd (2h) ###
+2026-11-04T12:30:52+0100 srv-core sshd[2827]: error: Bind to port 2242 on 192.168.56.10 failed: Permission denied.
+2026-11-04T12:30:52+0100 srv-core sshd[2827]: fatal: Cannot bind any address.
+2026-11-04T12:30:52+0100 srv-core systemd[1]: sshd.service: Failed with result 'exit-code'.
+2026-11-04T12:30:52+0100 srv-core systemd[1]: Failed to start OpenSSH server daemon.
+2026-11-04T12:31:34+0100 srv-core sshd[3212]: error: Bind to port 2242 on 10.42.0.10 failed: Permission denied.
+2026-11-04T12:31:34+0100 srv-core sshd[3212]: error: Bind to port 2242 on 192.168.56.10 failed: Permission denied.
+2026-11-04T12:31:34+0100 srv-core sshd[3212]: fatal: Cannot bind any address.
+2026-11-04T12:31:34+0100 srv-core systemd[1]: sshd.service: Failed with result 'exit-code'.
+2026-11-04T12:31:34+0100 srv-core systemd[1]: Failed to start OpenSSH server daemon.
+-- Boot 541cab815b214881a41d58cfa7d764c3 --
+2026-11-04T12:53:46+0100 srv-core sshd[944]: error: Bind to port 2242 on 10.42.0.10 failed: Cannot assign requested address.
+2026-11-04T12:53:46+0100 srv-core sshd[944]: error: Bind to port 2242 on 192.168.56.10 failed: Cannot assign requested address.
+2026-11-04T12:53:46+0100 srv-core sshd[944]: fatal: Cannot bind any address.
+2026-11-04T12:53:46+0100 srv-core systemd[1]: sshd.service: Failed with result 'exit-code'.
+2026-11-04T12:53:46+0100 srv-core systemd[1]: Failed to start OpenSSH server daemon.
+
+### 2. Tentatives d'authentification (Invalid/Failed/Accepted) ###
+nov. 04 12:08:06 srv-core sshd-session[1085]: Accepted publickey for ledbi from 192.168.56.1 port 64090 ssh2: ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co
+nov. 04 12:25:10 srv-core sshd-session[2398]: Accepted password for ledbi from 192.168.56.10 port 42794 ssh2
+nov. 04 12:26:00 srv-core sshd-session[2488]: Accepted publickey for ledbi from 192.168.56.10 port 51082 ssh2: ED25519 SHA256:tQyDy0qy0tv8aEEri5INVPM6qMlW3YBjGqQpTkyizik
+nov. 04 12:49:47 srv-core sshd-session[4126]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+nov. 04 12:49:47 srv-core sshd-session[4126]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+nov. 04 12:49:47 srv-core sshd-session[4126]: Accepted publickey for ledbi from 192.168.56.11 port 53404 ssh2: ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY
+nov. 04 12:50:38 srv-core sshd-session[4198]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+nov. 04 12:50:38 srv-core sshd-session[4198]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+nov. 04 12:50:38 srv-core sshd-session[4198]: Accepted publickey for ledbi from 192.168.56.11 port 56026 ssh2: ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY
+nov. 04 12:51:16 srv-core sshd-session[4263]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+nov. 04 12:51:16 srv-core sshd-session[4263]: Accepted key ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY found at /home/ledbi/.ssh/authorized_keys:4
+nov. 04 12:51:16 srv-core sshd-session[4263]: Accepted publickey for ledbi from 192.168.56.11 port 57218 ssh2: ED25519 SHA256:GX+LOoPjmNvFVAJRnMcnOlSVa3c3ELh+9Hl+aNntkyY
+-- Boot 541cab815b214881a41d58cfa7d764c3 --
+nov. 04 12:54:47 srv-core sshd-session[1062]: Accepted key ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co found at /home/ledbi/.ssh/authorized_keys:1
+nov. 04 12:54:47 srv-core sshd-session[1062]: Accepted key ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co found at /home/ledbi/.ssh/authorized_keys:1
+nov. 04 12:54:47 srv-core sshd-session[1062]: Accepted publickey for ledbi from 192.168.56.1 port 57856 ssh2: ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co
+
+### 3. Journaux authpriv du jour ###
+nov. 04 12:53:08 srv-core sshd-session[1085]: pam_unix(sshd:session): session closed for user ledbi
+nov. 04 12:53:08 srv-core sshd[3272]: Received signal 15; terminating.
+-- Boot 541cab815b214881a41d58cfa7d764c3 --
+nov. 04 12:53:46 srv-core sshd[944]: error: Bind to port 2242 on 10.42.0.10 failed: Cannot assign requested address.
+nov. 04 12:53:46 srv-core sshd[944]: error: Bind to port 2242 on 192.168.56.10 failed: Cannot assign requested address.
+nov. 04 12:53:46 srv-core sshd[944]: fatal: Cannot bind any address.
+nov. 04 12:54:32 srv-core sshd[1049]: Server listening on 10.42.0.10 port 2242.
+nov. 04 12:54:32 srv-core sshd[1049]: Server listening on 192.168.56.10 port 2242.
+nov. 04 12:54:47 srv-core sshd-session[1062]: main: SHA1 in signatures is disabled for RSA keys
+nov. 04 12:54:47 srv-core sshd-session[1062]: Connection from 192.168.56.1 port 57856 on 192.168.56.10 port 2242 rdomain ""
+nov. 04 12:54:47 srv-core sshd-session[1062]: Accepted key ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co found at /home/ledbi/.ssh/authorized_keys:1
+nov. 04 12:54:47 srv-core sshd-session[1062]: Postponed publickey for ledbi from 192.168.56.1 port 57856 ssh2 [preauth]
+nov. 04 12:54:47 srv-core sshd-session[1062]: Accepted key ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co found at /home/ledbi/.ssh/authorized_keys:1
+nov. 04 12:54:47 srv-core sshd-session[1062]: Accepted publickey for ledbi from 192.168.56.1 port 57856 ssh2: ED25519 SHA256:xRJM2XF8ip3zNveOMXe+2l3l6zbseHIZA+LPaG+0/co
+nov. 04 12:54:47 srv-core systemd[1066]: pam_unix(systemd-user:session): session opened for user ledbi(uid=1000) by ledbi(uid=0)
+nov. 04 12:54:47 srv-core sshd-session[1062]: pam_unix(sshd:session): session opened for user ledbi(uid=1000) by ledbi(uid=0)
+nov. 04 12:54:47 srv-core sshd-session[1062]: User child is on pid 1073
+nov. 04 12:54:48 srv-core sshd-session[1073]: Starting session: shell on pts/0 for ledbi from 192.168.56.1 port 57856 id 0
+nov. 04 12:55:11 srv-core sudo[1118]:    ledbi : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+nov. 04 12:55:11 srv-core sudo[1118]: pam_unix(sudo-i:session): session opened for user root(uid=0) by ledbi(uid=1000)
+
+### 4. Activite du compte nadia (UID 5101) ###
+-- No entries --
+
+### 5. Echecs et derniers logins (lastb / last) ###
+nadia                                  Tue Nov  3 11:16 - 11:16  (00:00)
+nadia                                  Tue Nov  3 11:16 - 11:16  (00:00)
+nadia                                  Tue Nov  3 11:16 - 11:16  (00:00)
+nadia                                  Tue Nov  3 11:16 - 11:16  (00:00)
+nadia                                  Tue Nov  3 11:16 - 11:16  (00:00)
+nadia                                  Tue Nov  3 11:16 - 11:16  (00:00)
+tarek    pts/1                         Tue Nov  3 11:10 - 11:10  (00:00)
+tonutili ssh:notty    192.168.56.1     Mon Nov  2 12:16 - 12:16  (00:00)
+ledbi    tty1                          Mon Nov  2 12:15 - 12:15  (00:00)
+
+btmp commence Mon Nov  2 12:15:11 2026
+---
+ledbi    pts/0        192.168.56.1     Wed Nov  4 12:54:48 2026   still logged in
+reboot   system boot  5.14.0-687.10.1. Wed Nov  4 12:53:40 2026   still running
+ledbi    pts/0        192.168.56.1     Wed Nov  4 12:08:07 2026 - Wed Nov  4 12:53:08 2026  (00:45)
+reboot   system boot  5.14.0-687.10.1. Wed Nov  4 12:05:12 2026 - Wed Nov  4 12:53:11 2026  (00:47)
+ledbi    pts/4        192.168.56.1     Tue Nov  3 12:45:24 2026 - Tue Nov  3 12:45:29 2026  (00:00)
+ledbi    pts/2        192.168.56.1     Tue Nov  3 11:56:52 2026 - Tue Nov  3 12:45:29 2026  (00:48)
+ledbi    pts/2        192.168.56.1     Tue Nov  3 11:14:07 2026 - Tue Nov  3 11:56:34 2026  (00:42)
+ledbi    pts/2        192.168.56.1     Tue Nov  3 11:07:32 2026 - Tue Nov  3 11:07:50 2026  (00:00)
+ledbi    pts/0        192.168.56.1     Tue Nov  3 11:05:11 2026 - Tue Nov  3 12:45:29 2026  (01:40)
+reboot   system boot  5.14.0-687.10.1. Tue Nov  3 11:05:04 2026 - Tue Nov  3 12:45:33 2026  (01:40)
+
+wtmp commence Mon Nov  2 12:12:15 2026
