@@ -1,0 +1,18 @@
+### E4 ###
+--- HTTP 200 ---
+/ -> 200
+/etat.json -> 200
+--- kill -9 : redemarrage auto ---
+actif: active ; PID 3483 -> 3923
+--- score securite ---
+→ Overall exposure level for helios-suivi.service: 1.5 OK 🙂
+--- quotas ---
+CPUQuotaPerSecUSec=500ms
+MemoryMax=134217728
+--- rattachement target ---
+● ├─helios-suivi.service
+●   ├─helios-suivi.service
+●   │   ├─helios-suivi-publish.timer
+--- timer ---
+NEXT                        LEFT     LAST                        PASSED      UNIT                       ACTIVATES
+Thu 2026-11-05 11:04:00 CET 53s left Thu 2026-11-05 11:02:06 CET 1min 0s ago helios-suivi-publish.timer helios-suivi-publish.service

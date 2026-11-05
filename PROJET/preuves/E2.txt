@@ -1,0 +1,13 @@
+### E2 ###
+drwxrws---+ 2 root suivi 41  5 nov.  10:43 /srv/helios/suivi/www
+--- index.html cree par lea ---
+-rw-rw----+ 1 lea suivi 46  5 nov.  10:42 /srv/helios/suivi/www/index.html
+--- helios-suivi lit (OK) ---
+<h1>Portail de suivi des tournees Helios</h1>
+--- nadia refusee ---
+cat: /srv/helios/suivi/www/index.html: Permission non accordée
+rc=1
+--- zabbix stat OK, ls refuse ---
+stat OK
+ls: impossible d'ouvrir le répertoire '/srv/helios/suivi/www': Permission non accordée
+rc=2

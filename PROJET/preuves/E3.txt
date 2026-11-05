@@ -1,0 +1,21 @@
+### E3 ###
+--- code 0 + JSON ---
+rc=0
+{
+  "genere": "2026-11-05T10:49:19+01:00",
+  "hote": "srv-core",
+  "derniere_mesure": "2026-11-05T10:49:15+01:00",
+  "charge_1min": 0.00,
+  "mem_dispo_ko": 1639364,
+  "mesures": 194
+}
+JSON valide
+--- journal ---
+nov. 05 10:46:32 srv-core helios-suivi-publish[2654]: source illisible : /var/lib/helios/telemetry.csv
+nov. 05 10:46:56 srv-core helios-suivi-publish[2679]: source illisible : /var/lib/helios/telemetry.csv
+nov. 05 10:48:28 srv-core helios-suivi-publish[2782]: demarrage publication
+nov. 05 10:48:28 srv-core helios-suivi-publish[2792]: etat.json publie (183 mesures)
+nov. 05 10:48:57 srv-core helios-suivi-publish[2826]: une autre instance tourne deja
+nov. 05 10:49:15 srv-core helios-suivi-publish[2851]: source illisible : /var/lib/helios/telemetry.csv
+nov. 05 10:49:19 srv-core helios-suivi-publish[2865]: demarrage publication
+nov. 05 10:49:19 srv-core helios-suivi-publish[2875]: etat.json publie (194 mesures)

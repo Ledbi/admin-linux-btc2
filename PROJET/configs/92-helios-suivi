@@ -1,0 +1,8 @@
+# Delegation Helios - equipe suivi (projet portail)
+Cmnd_Alias SUIVI_CTL = /usr/bin/systemctl restart helios-suivi.service, \
+                       /usr/bin/systemctl status helios-suivi.service, \
+                       /usr/bin/systemctl start helios-suivi-publish.service
+Cmnd_Alias SUIVI_LOG = /usr/bin/journalctl -u helios-suivi.service -n 100, \
+                       /usr/bin/journalctl -u helios-suivi-publish.service -n 100
+
+%suivi ALL = (root) SUIVI_CTL, SUIVI_LOG

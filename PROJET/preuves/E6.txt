@@ -1,0 +1,22 @@
+### E6 - tests depuis srv-edge ###
+--- Reseau METIER (10.42.0.10:8080) : attendu 200 ---
+http -> 200
+--- Reseau ADMIN (192.168.56.10:8080) : attendu echec ---
+Ncat: No route to host.
+rc = 1
+--- config zone internal ---
+internal (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: bond0 bond0.42
+  sources: 
+  services: 
+  ports: 10051/tcp 2242/tcp 8080/tcp
+  protocols: 
+  forward: yes
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 
+	rule source ipset="helios-blacklist" drop
