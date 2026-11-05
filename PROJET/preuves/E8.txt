@@ -1,0 +1,8 @@
+### E8 ###
+agent actif: active
+ecoute 10050: 1
+agent.ping: 1
+helios.suivi.http: 200
+helios.suivi.age: 33
+sysstat-collect: active
+sysstat-summary: active

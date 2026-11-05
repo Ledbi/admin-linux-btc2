@@ -1,0 +1,13 @@
+=== AVANT ===
+MemoryCurrent=10231808
+CPUUsageNSec=14504832000
+=== 2000 requetes ===
+
+real	0m35,325s
+user	0m12,903s
+sys	0m10,174s
+=== APRES ===
+MemoryCurrent=10240000
+CPUUsageNSec=18786721000
+
+--- sar pendant la charge (voir charge-sar.txt) : %idle ~41%, %system ~42%, %user ~16% ---

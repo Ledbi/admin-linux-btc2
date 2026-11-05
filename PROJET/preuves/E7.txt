@@ -1,0 +1,12 @@
+### E7 ###
+port 2242
+permitrootlogin no
+passwordauthentication no
+allowgroups ssh-admins
+--- lea refusee (voir journal sshd) ---
+nov. 05 11:10:26 srv-core sshd-session[4516]: User lea from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+nov. 05 11:10:26 srv-core sshd-session[4516]: Connection closed by invalid user lea 192.168.56.11 port 53926 [preauth]
+active
+ -2 e635f8c139e24b7a93a6320e997a5e89 Wed 2026-11-04 12:04:57 CET Wed 2026-11-04 12:53:11 CET
+ -1 541cab815b214881a41d58cfa7d764c3 Wed 2026-11-04 12:53:25 CET Wed 2026-11-04 14:44:05 CET
+  0 3ee83adbac4b4bceb4e14e01b70b1268 Thu 2026-11-05 10:32:16 CET Thu 2026-11-05 11:12:06 CET

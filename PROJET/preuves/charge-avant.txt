@@ -1,0 +1,2 @@
+MemoryCurrent=10219520
+CPUUsageNSec=376969000

@@ -1,0 +1,37 @@
+### E9 ###
+--- archives + empreinte ---
+total 24
+-rw-------. 1 root root 4210  5 nov.  11:18 suivi-20261105-111809.tar.gz
+-rw-r--r--. 1 root root   95  5 nov.  11:18 suivi-20261105-111809.tar.gz.sha256
+-rw-------. 1 root root 4215  5 nov.  11:18 suivi-20261105-111823.tar.gz
+-rw-r--r--. 1 root root   95  5 nov.  11:18 suivi-20261105-111823.tar.gz.sha256
+--- verification sha256 ---
+suivi-20261105-111809.tar.gz: Réussi
+suivi-20261105-111823.tar.gz: Réussi
+--- contenu archive ---
+srv/helios/suivi/
+srv/helios/suivi/www/
+srv/helios/suivi/www/index.html
+srv/helios/suivi/www/etat.json
+srv/helios/suivi/www/.publish.lock
+etc/systemd/system/helios-suivi.service
+etc/systemd/system/helios-suivi-publish.service
+etc/systemd/system/helios-suivi-publish.timer
+etc/systemd/system/helios-suivi-backup.service
+etc/systemd/system/helios-suivi-backup.timer
+etc/sudoers.d/92-helios-suivi
+etc/zabbix/zabbix_agent2.d/helios-suivi.conf
+usr/local/sbin/helios-suivi-publish.sh
+usr/local/sbin/helios-suivi-backup.sh
+--- restauration index.html : ACL identiques ---
+# file: /srv/helios/suivi/www/index.html
+# owner: lea
+# group: suivi
+user::rw-
+user:helios-suivi:rwx	#effective:rw-
+group::rwx	#effective:rw-
+group:suivi:rwx	#effective:rw-
+mask::rw-
+other::---
+
+<h1>Portail de suivi des tournees Helios</h1>
